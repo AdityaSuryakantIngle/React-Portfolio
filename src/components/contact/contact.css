@@ -1,0 +1,66 @@
+.contact {
+  background-color: red;
+  height: 100vh;
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: forestgreen;
+  position: absolute;
+}
+
+.contact-wrapper {
+  background-color: yellow;
+  display: flex;
+  padding: 50px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 60px;
+  width: 80%;
+}
+
+.contact-info {
+  border: 1px solid black;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2px 2px;
+  margin: 10px 10px;
+  width: 70%;
+}
+
+.contact-info-icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px;
+}
+
+.contact-desc {
+  font-weight: 200;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input {
+  width: 70%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+}
