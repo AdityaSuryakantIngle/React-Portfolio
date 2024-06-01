@@ -5,12 +5,16 @@ import Email from "./../../images/email.png";
 import Address from "./../../images/address.png";
 
 const Contact = () => {
+  const _handleSubmit = (e) => {
+    console.log("This is log from form");
+    e.preventDefault();
+  };
   return (
     <div className="contact">
       <div className="c-bg"></div>
       <div className="contact-wrapper">
         <div className="contact-left">
-          <h1 className="contact-title">Hey,Lets connect</h1>
+          <h1 className="contact-title">Hey, Lets connect</h1>
           <div className="contact-info">
             <div className="contact-info-item">
               <img src={Phone} alt="email" className="contact-info-icon" />
@@ -37,10 +41,16 @@ const Contact = () => {
             currently working as a full stack developer in Dwebbox Private
             Limited, Vile parle west.
           </p>
-          <form>
+          <form onSubmit={_handleSubmit}>
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="Subject" />
             <input type="text" placeholder="Email" />
+            <textarea rows="5" placeholder="Message">
+              dsfdsfds
+            </textarea>
+            <div>
+              <button> Submit </button>
+            </div>
           </form>
         </div>
       </div>

@@ -1,5 +1,4 @@
 .contact {
-  background-color: red;
   height: 100vh;
   position: relative;
 }
@@ -12,9 +11,11 @@
 }
 
 .contact-wrapper {
-  background-color: yellow;
   display: flex;
-  padding: 50px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .contact-left {
@@ -23,6 +24,7 @@
 
 .contact-right {
   flex: 1;
+  padding: 10px;
 }
 
 .contact-title {
@@ -30,17 +32,12 @@
   width: 80%;
 }
 
-.contact-info {
-  border: 1px solid black;
-}
-
 .contact-info-item {
   display: flex;
   align-items: center;
-  border: 1px solid black;
   padding: 2px 2px;
-  margin: 10px 10px;
   width: 70%;
+  margin: 10px 0px;
 }
 
 .contact-info-icon {
@@ -51,6 +48,7 @@
 
 .contact-desc {
   font-weight: 200;
+  font-size: 16px;
 }
 
 form {
@@ -58,9 +56,32 @@ form {
 }
 
 input {
-  width: 70%;
+  width: 50%;
+  height: 50px;
   padding: 10px 10px;
   border: none;
   border-bottom: 1px solid black;
   margin: 10px 0px;
+  font-size: 14px;
+  outline-color: black;
+}
+
+textarea {
+  width: 70%;
+  margin: 20px 0px;
+  font-size: 14px;
+  outline-color: black;
+}
+
+button {
+  font-weight: 500;
+  background-color: green;
+  text-align: center;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border-width: 1px;
+  cursor: pointer;
 }

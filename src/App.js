@@ -1,9 +1,10 @@
 import Contact from "./components/contact/Contact";
+import Intro from "./components/intro/Intro";
 
 function App() {
   return (
     <div className="App">
-      <div style={{ height: "100vh" }}>sdfdsd</div>
+      <Intro />
       <Contact />
     </div>
   );
